@@ -11,18 +11,18 @@
         <div class="col-xs-offset-2">
             <div class="col-xs-10">
                 <div class="well">
-        <form method="post" action="studentFormResults.php"> 
-        
+        <form method="post" action="studentFormResults.php">
+
         <form method="post" action="sendStudentForm.php">
             <p>
                 <strong>Frist Name:</strong><br>
                 <input type="text" name="fname" size=30>
-            
+
             </p>
             <p>
                 <strong>Last Name:</strong><br>
                 <input type="text" name="lname" size=30>
-            
+
             </p>
             <p>
                 <strong>Year of Birth:</strong><br>
@@ -30,9 +30,9 @@
                 <?php
                     for($i = 1995; $i <= 2006; $i += 1){
                         echo("<option value='{$i}'>{$i}</option>");
-                    }							
+                    }
                 ?>
-        
+
                 </select>
             </p>
             <p>
@@ -41,9 +41,9 @@
                 <?php
                     for($i = 7; $i <= 12; $i += 1){
                         echo("<option value='{$i}'>{$i}</option>");
-                    }							
+                    }
                 ?>
-        
+
                 </select>
             </p>
             <p>
@@ -52,12 +52,12 @@
                 <?php
                     for($i = 0; $i <= 10; $i += 1){
                         echo("<option value='{$i}'>{$i}</option>");
-                    }							
+                    }
                 ?>
-        
+
                 </select>
             </p>
-            
+
             <p>
                 <strong>When do you get up in the morning?</strong><br>
                 <select name="wake">
@@ -80,9 +80,9 @@
                 <?php
                     for($i = 0; $i <= 10; $i += .5){
                         echo("<option value='{$i} hours'>{$i}</option>");
-                    }							
+                    }
                 ?>
-        
+
                 </select>
             </p>
             <p>
@@ -91,9 +91,9 @@
                 <?php
                     for($i = 0; $i <= 10; $i += .5){
                         echo("<option value='{$i} hours'>{$i}</option>");
-                    }							
+                    }
                 ?>
-        
+
                 </select>
             </p>
             <p>
@@ -102,9 +102,9 @@
                 <?php
                     for($i = 0; $i <= 10; $i += .5){
                         echo("<option value='{$i} hours'>{$i}</option>");
-                    }							
+                    }
                 ?>
-        
+
                 </select>
             </p>
             <p>
@@ -113,9 +113,9 @@
                 <?php
                     for($i = 0; $i <= 10; $i += .5){
                         echo("<option value='{$i} hours'>{$i}</option>");
-                    }							
+                    }
                 ?>
-        
+
                 </select>
             </p>
             <p>
@@ -124,9 +124,9 @@
                 <?php
                     for($i = 0; $i <= 10; $i += .5){
                         echo("<option value='{$i} hours'>{$i}</option>");
-                    }							
+                    }
                 ?>
-        
+
                 </select>
             </p>
             <p>
@@ -137,4 +137,4 @@
         </div>
         </div>
     </body>
-</html> 
+</html>

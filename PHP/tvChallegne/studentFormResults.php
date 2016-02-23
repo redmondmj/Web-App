@@ -1,12 +1,12 @@
 
 		<?php
-        
+
             //Check if the form is submitted and complete
             if (($_POST['fname'] == "") || ($_POST['lname'] == "")) {
                 header("Location: studentForm.php");
             exit;
             }
-            
+
             $fname = $_POST['fname'];
             $lname = $_POST['lname'];
             $birth = $_POST['birth'];
@@ -14,13 +14,13 @@
             $siblings = $_POST['siblings'];
             $wake = $_POST['wake'];
             $bed = $_POST['bed'];
-            $homework = $_POST['homework']; 
+            $homework = $_POST['homework'];
             $tv = $_POST['tv'];
             $games = $_POST['games'];
             $family = $_POST['family'];
             $friends = $_POST['friends'];
             $daysInSchoolYear = 190;
-        
+
             $yearsLeft = 12-$grade;
             $homeworkLeft = $yearsLeft*$daysInSchoolYear*$homework;
             $screentimeLeft = ($yearsLeft*365*$games)+($yearsLeft*365*$tv);
@@ -30,39 +30,39 @@
                 $screenPercent = "Undefined (this person is comatose, and telekenetic)";
             }
 
-            
-                
+
+
             $msg = "<html><body><table style='border: 1px solid black'>
                     <tr>
                         <td>First Name</td>
-                        <td>  $fname</td>                     
+                        <td>  $fname</td>
                     </tr>
                     <tr>
                         <td>Last Name</td>
-                        <td>  $lname</td> 
+                        <td>  $lname</td>
                     </tr>
                     <tr>
                         <td>Birth Year</td>
-                        <td>  $birth</td> 
+                        <td>  $birth</td>
                     </tr>
                     <tr>
                         <td>Grade</td>
-                        <td>  $grade</td> 
+                        <td>  $grade</td>
                     </tr>
                     <tr>
                         <td>Number of Siblings</td>
-                        <td>  $siblings</td> 
+                        <td>  $siblings</td>
                     </tr>
                     <tr>
                         <td>Years Left in School</td>
-                        <td>  $yearsLeft</td> 
+                        <td>  $yearsLeft</td>
                     </tr>
                     <tr>
                         <td>Hours Left in Front of Screen</td>
-                        <td>  $screentimeLeft</td> 
-                    </tr> 
+                        <td>  $screentimeLeft</td>
+                    </tr>
                     </table></body></html>";
-            
+
             $to = "jfmacdonald91@gmail.com";
             $subject = $fname . " " . $lname . "'s Survey Results";
             $mailheaders = "From: Student Survey <webmaster@nscctruro.ca>\n";
@@ -70,7 +70,7 @@
             $mailheaders .= "MIME-Version: 1.0" . "\r\n";
             $mailheaders .= "Content-type:text/html;charset=UTF-8" . "\r\n";
             mail($to, $subject, $msg, $mailheaders);
-                
+
 		?>
 <html>
 	<head>
@@ -84,7 +84,7 @@
         <div class="col-xs-8 col-sm-10">
         <div class="well">
             <div class="h3">
-                Great! Thanks, 
+                Great! Thanks,
                 <?php
                     echo $fname;
                 ?>
@@ -98,11 +98,11 @@
 
                 echo ("Years Left in School: " . $yearsLeft . "<br/>");
                 echo ("Hours Left in Front of Screen: " . $screentimeLeft . "<br/><br/>");
-            
+
                 echo ("Percent of waking time spent in front of screen: " . $screenPercent);
             ?>
             <div>
-                
+
             </div>
         </div>
         </div>

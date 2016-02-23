@@ -4,7 +4,7 @@
          header("Location: simpleForm.html");
          exit;
    }
-         
+
     $msg = "E-MAIL SENT FROM \"it.nscctruro.ca\"\n";
     $msg .= "Sender's E-Mail:\t$_POST[sender_email]\n";
     $msg .= "Message:\t$_POST[message]\n";
