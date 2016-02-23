@@ -1,0 +1,65 @@
+html {
+    overflow-y: scroll;
+}
+
+body {
+	margin: 10px;
+	padding: 0px;
+	border-style: none;
+	background: #FFFFFF;
+	color: #000100;
+	font-family: verdana,arial,helvetica,sans-serif;
+	font-size: 11px;
+}
+
+/* plucked this from EasyAutoComplete CSS */
+input[type=text] {
+  border-color: #ccc;
+  border-radius: 4px;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) inset;
+  color: #555;
+  float: none;
+  padding: 6px 12px;
+}
+
+#content {
+    position:absolute;
+    top:65px;
+    left:145px;
+    width:450px;
+}
+
+#content > div > div {
+    margin-bottom:10px;
+    font-weight:bold;
+}
+
+#content > div {
+    margin-top:10px;
+}
+
+/* lesson content below */
+#toppings div, #selected div {
+    margin-left:5px;
+    margin-top:2px;
+    width:75px;
+    cursor:move;
+}
+
+#toppings,#selected {
+    padding:5px;
+    border-style:solid;
+    border-width:1px;
+    border-color:#999999;
+    width:100px;
+    height:135px;
+    color: #999999;
+    display:inline-block;
+}
+
+#selected {
+    vertical-align:top;
+    margin-left:10px;
+}

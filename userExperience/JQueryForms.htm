@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Antonio's Online Pizzaria :)</title>
+		<link rel="stylesheet" type="text/css" href="resources/styles.css" />
+        <link rel="stylesheet" type="text/css" href="resources/easy-autocomplete.min.css" />
+        <link rel="stylesheet" type="text/css" href="resources/dragula.min.css" />
+
+	</head>
+	<body>
+		<div id="header">
+			<img src="images/imgPizzaria.png" alt="Antonio's Online Pizzaria" />
+		</div>
+
+		<div id="content">
+			Enter your order below and click the submit button - like magic one of our excellent delivery personel will knock on your door with your hot, fresh pizza. Thanks for your business!
+			<div>
+                <div>Name:</div>
+                <input id="txtName" type="text" maxlength="50" />
+            </div>
+            <div>
+                <div>Address:</div>
+                <input id="txtAddress" type="text" maxlength="100" />
+            </div>
+            <div>
+                <div>City:</div>
+                <input id="txtCity" type="text" maxlength="50" />
+            </div>
+            <div>
+                <div>Size:</div>
+                <input name="radSize" type="radio" checked="checked" value="large" />Large<br />
+                <input name="radSize" type="radio" value="medium" />Medium<br />
+                <input name="radSize" type="radio" value="small" />Small<br />
+            </div>
+            <div>
+                <div>Possible Toppings / Selection:</div>
+                <div id="toppings">
+                    <div>Pepperoni</div>
+                    <div>Bacon</div>
+                    <div>Peppers</div>
+                    <div>Pineapple</div>
+                    <div>Ham</div>
+                    <div>Tomatoes</div>
+                    <div>Olives</div>
+                    <div>Onions</div>
+                </div>
+
+                <div id="selected">
+
+                </div>
+
+            </div>
+            <div>
+                <div>Delivery Notes:</div>
+                <input type="checkbox" value="Quicksand" />Quicksand<br />
+                <input type="checkbox" value="Large dog with rabies" />Large dog with rabies<br />
+                <input type="checkbox" value="Poison ivy" />Poison ivy<br />
+                <input type="checkbox" value="Moat with aligators" />Moat with aligators<br />
+                <input type="checkbox" value="Check All" />Check All<br />
+            </div>
+            <div>
+                <input id="btnSubmit" type="button" value="Submit" />
+            </div>
+		</div>
+
+        <script type="text/javascript" src="resources/jquery-2.2.0.min.js"></script>
+        <script type="text/javascript" src="resources/jquery.easy-autocomplete.min.js"></script>
+        <script type="text/javascript" src="resources/dragula.min.js"></script>
+
+        <script type="text/javascript" src="Code.js"></script>
+
+	</body>
+</html>
+
