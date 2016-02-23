@@ -3,7 +3,7 @@ $(document).ready(function () {
 	"use strict";
 
     // server sided script
-    var submitscript = "http://ftp.nscctruro.ca/john_macdonald/RIA/submitOrder.ashx";
+    var submitscript =  "http://ftp.nscctruro.ca/john_macdonald/RIA/submitOrder.ashx";
 
 	// ------------------------------------------------------------ event handlers
 	function onFieldCheck(e) {
