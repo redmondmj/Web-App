@@ -3,7 +3,7 @@ $(document).ready(function () {
 	"use strict";
 
     // server sided script
-    var submitscript = "submitOrder.ashx";
+    var submitscript = "http://ftp.nscctruro.ca/john_macdonald/RIA/submitOrder.ashx";
 
 	// ------------------------------------------------------------ event handlers
 	function onFieldCheck(e) {
@@ -71,14 +71,14 @@ $(document).ready(function () {
             //console.log("test: " + sendString);
 
             // send the request to the server with JSON
-            @.ajax(
+            @.ajax({
              type:"POST",
              url: submitscript,
              contentType: "application/json",
              data: sendString,
              success: onResponse,
              error: onerror
-             );
+                });
         }
     );
 
