@@ -29,6 +29,10 @@ class MyClass {
         return $this->prop1 . "<br />";
     }
 
+    public static function plusOne(){
+        return "The count is" . ++self::$count . ".<br>";
+    }
+
 }
 
 class MyOtherClass extends MyClass
@@ -46,6 +50,10 @@ class MyOtherClass extends MyClass
         return $this->getProperty();
     }
 }
+
+do{
+    echo MyClass::plusOne();
+}while (MyClass::$count<10);
 
 
 ?>

@@ -24,7 +24,7 @@ class MyClass {
         $this->prop1 = $newval;
     }
 
-    public function getProperty() {
+    protected function getProperty() {
         return $this->prop1 . "<br />";
     }
 }
@@ -39,12 +39,14 @@ class MyOtherClass extends MyClass {
         echo "From a new method in " . __CLASS__ . ".<br />";
     }
 
+    public function callProtected(){
+        return $this->getProperty();
+    }
+
 }
 
 // Create a new object
 $newobj = new MyOtherClass;
 
 // Call the protected method from within a public method
-echo $newobj->getProperty();
-
-?>
+echo $newobj->callProtected();
