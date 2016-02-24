@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+ <!-- remember to check php.ini for:
+
+        File_Uploads = On
+        Upload_max_filesize = 2M
+        upload_tmp_dir = /temp (optional)
+
+        Depending on you upload requirements you may also have to add MIME types
+
+        -->
+
+<html>
+	<head>
+       <title>Upload a File</title>
+	</head>
+	<body>
+		<h1>Upload a File</h1>
+		<form method="POST" action="10do_upload.php" enctype="multipart/form-data">
+            <p><strong>File to Upload:</strong><br>
+            <input type="file" name="img1" ></p>
+            <p><input type="submit" name="submit" value="Upload File"></p>
+		</form>
+	</body>
+</html>

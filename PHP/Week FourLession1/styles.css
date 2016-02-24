@@ -1,0 +1,29 @@
+body {
+    background-color: black;
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+}
+
+h1 {
+    color: lightgrey;
+    font-size: 24;
+    font-family: sans-serif;
+    font-style: bold;
+    padding-bottom: 10dp;
+}
+
+h2 {
+    color: red;
+    font-size: 16;
+}
+
+p {
+    color:lightgray;
+    font-family: fantasy;
+}
+
+select {
+    margin-left: 80px;
+    padding-left: 20px;
+}

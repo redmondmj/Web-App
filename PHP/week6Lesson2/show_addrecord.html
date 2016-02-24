@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Add a Record</title>
+	</head>
+	<body>
+		<h1>Adding a Record to my_music</h1>
+		<form method="POST" action="do_addrecord.php">
+			<table cellspacing=3 cellpadding=3>
+				<tr>
+					<td valign=top>
+						<p><strong>ID:</strong><br>
+						<input type="text" name="id" size=5 maxlength=5></p>
+						<p><strong>Date Acquired (YYYY-MM-DD):</strong><br>
+						<input type="text" name="date_acq" size=10 maxlength=10></p>
+					</td>
+					<td valign=top>
+						<p><strong>Format:</strong><br>
+						<input type="radio" name="format" value="CD" checked> CD
+						<input type="radio" name="format" value="CS"> cassette
+						<input type="radio" name="format" value="LP"> LP
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td valign=top>
+						<p><strong>Title:</strong><br>
+						<input type="text" name="title" size=35 maxlength=150></p>
+					</td>
+					<td valign=top>
+						<p><strong>Record Label:</strong><br>
+						<input type="text" name="rec_label" size=35 maxlength=50></p>
+					</td>
+				</tr>
+				<tr>
+					<td valign=top>
+						<p><strong>Artist's First Name:</strong><br>
+						<input type="text" name="artist_fn" size=35 maxlength=100></p>
+					</td>
+					<td valign=top>
+						<p><strong>Artist's Last Name (or Group Name):</strong><br>
+						<input type="text" name="artist_ln" size=35 maxlength=100></p>
+					</td>
+				</tr>
+				<tr>
+					<td valign=top colspan=2 align=center>
+						<p><strong>My Notes:</strong><br>
+						<textarea name="my_notes" cols=35 rows=5 wrap=virtual></textarea></p>
+						<p><input type="SUBMIT" name="submit" value="Add Record"></p>
+					</td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</html>
+

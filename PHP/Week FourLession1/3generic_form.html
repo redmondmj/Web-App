@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Generic Input Form</title>
+	</head>
+	<body>
+		<form method="post" action="4display_input.php">
+			<p><strong>Text Field:</strong><br>
+			<textarea name="text1" cols="45" rows="5" wrap="soft"></textarea></p>
+			<p><strong>String Function:</strong><br>
+			<input type="radio" name="func" value="md5"> get md5<br>
+			<input type="radio" name="func" value="strlen"> get length of string<br>
+			<input type="radio" name="func" value="strrev"> reverse the string<br>
+			<input type="radio" name="func" value="strtoupper"> make string uppercase<br>
+			<input type="radio" name="func" value="strtolower"> make string lowercase<br>
+			<input type="radio" name="func" value="ucwords"> make first letter of all
+			<p><input type="submit" name="submit" value="Do Something With the String"></p>
+		</form>
+	</body>
+</html>
+
