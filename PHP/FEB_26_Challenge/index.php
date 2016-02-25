@@ -21,6 +21,7 @@ header("location: profile.php");
 <label>Password :</label>
 <input id="password" name="password" placeholder="**********" type="password"><br/><br/><br/>
 <input name="submit" type="submit" value=" Login ">
+<input name="register" type="submit" value=" Register ">
 <span><?php echo $error; ?></span>
 </form>
 </div>
