@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Antonio's Online Pizzaria :)</title>
+		<link rel="stylesheet" type="text/css" href="resources/styles.css" />
+	</head>
+	<body>
+		<div id="header">
+			<img src="images/imgPizzaria.png" alt="Antonio's Online Pizzaria" />
+		</div>
+
+		<div id="content">
+			Welcome loyal pizza dispatcher.<br />Click the retrieve button to get a full list of today's pizza orders...
+            <div>
+                <input id="btnRetrieve" type="button" value="Retrieve" />
+            </div>
+
+            <div id="output">
+            </div>
+		</div>
+
+        <div id="orderTemplate" style="display:none; border-top-style:solid; border-top-width:1px; border-color:#C0C0C0">
+            <span style="font-size:26px;float:right;color:#C0C0C0;font-weight:bold"></span>
+            <div><span class='deliveryHeader'>Customer Information:</span><br /></div>
+            <div><span class='deliveryHeader'>Pizza Size:</span><br /></div>
+            <div><span class='deliveryHeader'>Order Details:</span><br /></div>
+            <div><span class='deliveryHeader'>Order Notes:</span><br /></div>
+            <br />
+		</div>
+
+        <script type="text/javascript" src="resources/jquery-2.2.0.min.js"></script>
+        <script type="text/javascript" src="Code.js"></script>
+
+	</body>
+</html>
+

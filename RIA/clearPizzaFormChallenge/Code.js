@@ -8,7 +8,7 @@ $(document).ready(function () {
 	"use strict";
 
     // server sided script
-    var submitScript = "http://www.seanmorrow.ca/~lessonspace/submitOrder.ashx";
+    var submitScript = "http://web.nscctruro.ca/john_macdonald/RIA/submitOrder.ashx";
 
 	// ------------------------------------------------------------ event handlers
 	function onFieldCheck(e) {
@@ -100,6 +100,7 @@ $(document).ready(function () {
                 success: onResponse,
                 error: onerror
             });
+
         }
     );
 
