@@ -15,11 +15,11 @@ class MyClass {
             $thumbnail = imagecopyresized( $tmp_img, $img, 0, 0, 0, 0, $width/$i, $height/$i, $width, $height );
 
             if ($i==4){
-                imagejpeg( $tmp_img, "thumbnails/quarter" );
+                imagejpeg( $tmp_img, "thumbnails/quarter.jpg" );
             }else if ($i==3){
-                imagejpeg( $tmp_img, "thumbnails/third" );
+                imagejpeg( $tmp_img, "thumbnails/third.jpg" );
             }else if ($i==2){
-                imagejpeg( $tmp_img, "thumbnails/half" );
+                imagejpeg( $tmp_img, "thumbnails/half.jpg" );
             }
         }
     }
@@ -55,15 +55,15 @@ $obj -> thumbnailImage("images/download.jpg")
         </div>
 
         <div class="h3 col-sm-3 col-lg-2">Half <br/>
-            <img src= "thumbnails/half" alt="thumbnail1"/>
+            <img src= "thumbnails/half.jpg" alt="thumbnail1"/>
         </div>
 
         <div class="h3 col-sm-2 col-lg-2">Third <br/>
-            <img src= "thumbnails/third" alt="thumbnail1"/>
+            <img src= "thumbnails/third.jpg" alt="thumbnail1"/>
         </div>
 
         <div class="h3 col-sm-1 col-lg-1">Quarter <br/>
-            <img src= "thumbnails/quarter" alt="thumbnail1"/>
+            <img src= "thumbnails/quarter.jpg" alt="thumbnail1"/>
         </div>
 
     </body>
