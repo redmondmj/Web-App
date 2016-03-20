@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Introduction to Angular</title>
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    </head>
+    <body ng-app="HelloWorld">
+
+        <div class="container-fluid" ng-controller="HelloController as helloCtrl">
+            <div class="row" style="margin-bottom:10px;">
+                <div class="col-sm-12">
+                    <h2>Hello World with Angular {{helloCtrl.goodBye()}}</h2>
+                </div>
+            </div>
+            <div class="row" style="margin-bottom:20px;">
+                <div class="col-sm-12">
+                    <div class="form-group">
+                        Enter message into textbox:
+                    </div>
+
+                    <div class="form-group">
+                        <label for="txtName">Your Name</label>
+                        <input id="txtName" type="text" class="form-control" ng-model="helloCtrl.enteredName" />
+                        <div style="margin-top:5px;">Character count: {{helloCtrl.enteredName.length}}</div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="checkbox">
+                            <label><input type="checkbox" ng-model="helloCtrl.hide">Pssst! Hide the output...</label>
+                            <!--{{helloCtrl.hide}}-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row" style="margin-bottom:20px;" ng-show="helloCtrl.enteredName">
+                <div class="col-sm-12">
+                    <h3>Hello world from {{helloCtrl.enteredName}}</h3>
+                    <h3>Hello world from the students of {{ helloCtrl.course.name }}</h3>
+
+                    <div ng-repeat="student in helloCtrl.course.students">
+                        <h5>{{student.id}} {{student.name}}</h5>
+                    </div>
+
+                    <div>
+                        <h5>{{ helloCtrl.course.instructor }}</h5>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+        <script type="text/javascript" src="App.js"></script>
+
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
