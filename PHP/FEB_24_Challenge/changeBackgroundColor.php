@@ -1,5 +1,6 @@
 <?php
-
+// Hey Frank,
+// There are 4 bugs, but they are all in the script, the HTML is fine
 $cookie_name = "colourhex";
 $count_name = "count";
 $message = "Okay, now get back to work.";
@@ -43,7 +44,7 @@ setcookie($count_name, $cookie_count, time() + (86400 * 30), "/"); // 86400 = 1 
     <body>
         <form class="well mywell col-sm-8 col-sm-offset-2" id="form1" name="form1" method="post" action="changeBackgroundColor.php">
             <div class="h4">
-            <?php if($cookie_count!=0){echo $cookie_count . " guesses left.";}else{echo $message;} ?><br/>
+            <?php if($cookie_count!=0){echo $cookie_count . " changes left.";}else{echo $message;} ?><br/>
             </div>
             <div class="col-xs-8">
             <input class="form-control" name="colourset" placeholder="Color Hex"/>
