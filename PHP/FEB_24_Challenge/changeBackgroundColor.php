@@ -1,6 +1,4 @@
 <?php
-// Hey Frank,
-// There are 4 bugs, but they are all in the script, the HTML is fine
 $cookie_name = "colourhex";
 $count_name = "count";
 $message = "Okay, now get back to work.";
