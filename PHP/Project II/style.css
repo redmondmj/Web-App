@@ -1,12 +1,6 @@
 @import http://fonts.googleapis.com/css?family=Raleway;
-/*----------------------------------------------
-CSS Settings For HTML Div ExactCenter
-------------------------------------------------*/
-#main {
-width:960px;
-margin:50px auto;
-font-family:raleway
-}
+@import url('//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css');
+
 span {
 color:red
 }
@@ -24,15 +18,7 @@ border-bottom:1px solid #ccc;
 margin:10px -40px;
 margin-bottom:30px
 }
-#login {
-width:25%;
-border-radius:10px;
-font-family:raleway;
-border:2px solid #ccc;
-padding:10px 40px 25px;
-margin-left: 30%;
-margin-top:70px
-}
+
 input[type=text],input[type=password] {
 width:99.5%;
 padding:10px;
@@ -42,7 +28,7 @@ padding-left:5px;
 font-size:16px;
 font-family:raleway
 }
-input[type=submit] {
+#login input[type=submit] {
 width:100%;
 background-color:#00BCFF;
 color:#fff;
@@ -70,4 +56,16 @@ color:#6495ed
 }
 i {
 color:#6495ed
+}
+.pull-bottom {
+    display: inline-block;
+    margin-left: 50px;
+    vertical-align: bottom;
+    float: none;
+}
+.pull-right {
+    float: right;
+}
+.ui-datepicker{
+    background: #cfcfcf;
 }
