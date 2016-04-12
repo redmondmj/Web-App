@@ -23,7 +23,11 @@ public class MailHandler
             mailMessage.From = new MailAddress("trurorotary@gmail.com");
             mailMessage.Subject = "Rotary Club Yearbook Varification";
             mailMessage.Body = "Thank you for supporting the Rotary Club of Truro,\n\n The link below will take you to a login page.\n\n Enter the following\n username:rotarysponsor\n password:r0t@rysupporter\n\n Once logged in, you can check the information of your business and make sure everything is as you would like it to appear in the yearbook.";
-            SmtpClient smtpClient = new SmtpClient("smtp.nscctruro.ca");
+            SmtpClient smtp = new SmtpClient();
+            smtp.Port = 587; 
+            smtp.EnableSsl = true;
+            smtp.Credentials = new NetworkCredential("admin@rotaryyeabook.ca",  "R0taryYBadmin");
+            smtp.Host = "smtp.netfirms.com"; 
             smtpClient.Send(mailMessage);
             return("E-mail sent!");
         }
